@@ -8,4 +8,4 @@
 OR 
 Type ``./compound`` for linux.
 
-3. Enter the stuff it is asking and ~~wolah!!!~~ you got the result
+3. Enter the stuff it is asking and **wolah!!!** you got the result

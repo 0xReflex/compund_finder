@@ -2,22 +2,27 @@
 
 int main()
 {
-	int interest = 0;
+	float interest = 10;
 	int amount = 0;
-	int time = 0;
-	int money;
+	int time = 8;
+	int money ;
+	int Money_You_Add = 30000;
 
-	std::cout << "enter interest percent:";
-	std::cin >> interest;
-	std::cout << "enter amount:";
-	std::cin >> amount;
-	std::cout << "enter enter time:";
-	std::cin >> time;
-
-	for (int i = 0; i <= time; i++)
+	// std::cout << "enter interest percent:";
+	// std::cin >> interest;
+	// std::cout << "enter amount:";
+	// std::cin >> amount;
+	// std::cout << "enter time:";
+	// std::cin >> time;
+	// std::cout << "enter money you add per month:";
+	// std::cin >> Money_You_Add;
+	Money_You_Add = Money_You_Add * 12;
+	
+	for (int i = 1; i <= time; i++)
 	{
-		money = interest * amount / 100;
-		amount += money;
+		money = (interest/100) * (amount + Money_You_Add);
+		amount += money + Money_You_Add;
 	}
 	std::cout << amount;
+	std::cin;
 }
