@@ -24,5 +24,5 @@ int main()
 		amount += money + Money_You_Add;
 	}
 	std::cout << amount;
-	std::cin;
+	std::cin.get();
 }
