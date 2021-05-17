@@ -3,10 +3,10 @@
 int main()
 {
 	float interest;
-	int amount;
-	int time;
-	int money ;
-	int Money_You_Add = 0;
+	float amount;
+	float time;
+	float money ;
+	float Money_You_Add = 0;
 
 	std::cout << "enter interest percent:";
 	std::cin >> interest;
@@ -16,7 +16,7 @@ int main()
 	std::cin >> time;
 	std::cout << "enter money you add per month:";
 	std::cin >> Money_You_Add;
-	Money_You_Add = Money_You_Add * 12;
+	Money_You_Add = Money_You_Add * 12.0;
 	
 	for (int i = 1; i <= time; i++)
 	{
